@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela</title>
+    <style>
+       
+       
+       
+       
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #444242;
+
+            
+        }
+       
+        h1{
+            text-align: center;
+        }
+
+        h2{
+
+            color: green;
+
+
+
+        }
+        
+        div{
+            background-color: #444242;
+           position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 100px;
+            border-radius: 15px;
+            color: #FFFFFF;
+            
+
+            
+            
+        }
+        input{
+            padding: 15px;
+            font-size: 15px;
+            border-radius: 50px;
+            border: 1px solid #FA9401;
+            background: #444242;
+            text-align: center;
+            color: #FFFFFF;
+            cursor: pointer;
+            
+            
+
+
+        }
+
+        footer{
+            position: absolute;
+            bottom: 0;
+            color: #F07D00;
+            width: 100%;
+            height: 90px;    
+            text-align: center;
+            line-height: 100px;
+
+        }
+
+        .cont{
+            padding-left:23px; 
+            color: #FFFFFF;
+            padding-top:5px;       
+            height:25px; 
+            background-image:url(assets/phone-solid.svg);
+            background-repeat:no-repeat;
+         
+
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+        }
+        .input-icons i {
+            position: absolute;
+        }
+          
+        .input-icons {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .icon {
+            padding: 10px;
+            min-width: 40px;
+        }
+
+
+
+
+        nav ul {
+            float: right;
+            margin-right: 20px;
+        }
+        nav ul li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+        }
+        nav ul li a {
+            color: white;
+            font-size: 17px;
+            padding: 7px 13px;
+            border-radius: 3px;
+            text-transform: uppercase;
+        }
+        a.active, a:hover {
+            transition: .5s;
+        }
+        .checkbtn {
+            font-size: 30px;
+            color: white;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+        #check {
+            display: none;
+        }
+        @media (max-width: 952px){
+            label.logo{
+                font-size: 30px;
+                padding-left: 50px;
+            }
+            nav ul li a{
+                font-size: 16px;
+            }
+        }
+        @media (max-width: 858px){
+            .checkbtn {
+                display: block;
+            }
+            ul{
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                top: 80px;
+                left: -100%;
+                text-align: center;
+                transition: all .5s;
+                background: no-repeat;
+            }
+            nav ul li{
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+            }
+            nav ul li a {
+                font-size: 20px;
+            }
+            a:hover, a.active {
+                background: none;
+            }
+            #check:checked ~ ul {
+                left: 0;
+            }
+        }
+
+        select{
+            border-radius: 10px;
+            height: 30px;
+        }
+        
+       
+    </style>
+</head>
+<h2>
+   
+
+
+</h2>
+
+<nav>
+
+    <select>
+        <option>Idioma</option>
+        <option>Portugues</option>
+    </select>
+
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <a style="color: #FFFFFF;
+        " href="sobre.html"><i class="fa-solid fa-bars"></i></a>
+
+    </label>
+    
+</nav>
+<body>
+    <script src="https://kit.fontawesome.com/aa80aa6f89.js" crossorigin="anonymous"></script>
+<div class="main">
+
+   
+        
+            
+    <form action="login_back.php" method= "POST">
+    <div class="input-icons">
+       
+        <h1><img src="assets/image.png"></h1>
+        
+        <i class="fa-solid fa-magnifying-glass icon"></i>
+        <input class="input-field" style="background-color:#F07D00 ;" type="text" id="" placeholder="Pesquisar produtos" name="search">
+        <br><br>
+        <i class="fa-sharp fa-solid fa-rocket icon"></i>
+        <input class="input-field" type="lancamento" placeholder="Lancamentos" name="lancamento" >
+        <br><br>
+        <i class="fa-solid fa-cart-plus icon"></i>
+        <input class="input-field" type="text" placeholder="Carinho" name="carinho">
+        <br><br>
+        <i class="fa-solid fa-phone icon"></i>
+        <input class="input-field" type="text" placeholder="Contato" name="contato">
+        <br><br>
+        <br>
+        <br>
+        <br>
+        
+    </div>
+    </form>
+    
+    </div>
+
+    <footer>
+        <a style="color:#F07D00" href="https://ideia2001.com.br/"><i class="fa-solid fa-globe"></i></a>
+        <a style="color:#F07D00" href="https://www.facebook.com/Ideia2001/"><i class="fa-brands fa-facebook"></i></a>
+        <a style="color:#F07D00" href="https://www.instagram.com/Ideia2001/"><i class="fa-brands fa-instagram"></i></a>
+    </footer>
+    
+
+       
+</body>
+
+
+   
+</html>
